@@ -1,0 +1,318 @@
+﻿* {
+
+	margin: 0;
+	padding: 0;
+}
+a
+{
+    text-decoration: none;
+    color: #1b98f8;
+}
+body
+{
+    font-family: Arial,sans-serif;
+    overflow-x: auto;
+    overflow-y: auto;
+    margin: 0;
+    padding: 0;
+}
+#menu_toggle
+{
+    display: none;
+}
+.menu
+{
+    width: 150px;
+    float: left;
+    height: 100vh;
+    min-height: 109px;
+    background-color: #252a3a;
+    
+    overflow-y: hidden;
+
+}
+.compose
+{
+    background-color: #1B98F8;
+    padding: 8px 16px;
+    margin: 16px 25px;
+    font-size: 16px;
+    border-radius: 20px;
+    text-align: center;
+    color: white;
+    cursor: pointer;
+    width: 70px;
+
+}
+.compose:hover
+{
+    background-color: white;
+    color: #1B98F8;
+    
+}
+.menu_element
+{
+    text-align: left;
+    list-style: none;
+    color: white;
+    cursor: pointer;
+    padding-left: 20px;
+    padding-bottom: 10px;
+    padding-top: 5px;
+    display: block;
+}
+.numer
+{
+    color: #5a6e9f;
+}
+.menu_element:hover
+{
+    background-color: #893737;
+}
+#labels
+{
+    color: #5a6e9f;
+    font-size: 20px;
+    padding: 5px;
+    margin-left: 10px;
+}
+.labels_kwadraty
+{
+    background-color: white;
+    width: 13px;
+    height: 14px;
+    float: left;
+    border-radius:2px;
+    margin-right: 4px;  
+}
+#kw1
+{
+    background-color: yellow;
+}
+#kw2
+{
+    background-color: aqua;
+    clear: both;
+}
+#kw3
+{
+    background-color: green;
+    clear: both;
+    margin-bottom: 20px;
+}
+.labels_element
+{
+    text-align: left;
+    list-style: none;
+    color: white;
+    padding-left: 20px;
+    padding-bottom: 1px;
+    padding-top: 1px;
+    cursor: pointer;
+    display: block;
+    float: left;
+}
+.clear
+{
+    clear: both;
+}
+.lista
+{
+    width: 350px;
+    height: 100vh;
+    border-right: 1px solid #d0c8c8;
+    float: left;
+    overflow-y: scroll;
+}
+.mail
+{
+    padding: 14px 16px;
+    height: 80px;
+    border-bottom: 1px solid #d0c8c8;
+    display: block;
+}
+.mail:hover
+{
+    background-color: #eee;
+}
+
+.avatar_img
+{
+ width: 42px;
+ height: 42px;
+ display: inline-block;
+ border-radius: 3px;
+ margin-right: 8px;
+ float: left;
+}
+.nazwisko
+{
+    text-transform: uppercase;
+    font-size: 13px;
+    color: #999;
+}
+.tytul
+{
+    font-size: 16px;
+    color: black;
+    font-weight: 700;
+}
+.zajawka
+{
+    font-size: 14px;
+    color: black;
+    margin: 7px 0;
+    padding-left: 50px;
+}
+.mail_new
+{
+    padding: 14px 16px;
+    height: 80px;
+    border-bottom: 1px solid #d0c8c8;
+    border-left: 6px solid #1B98F8;
+    display: block;
+}
+.mail_new:hover
+{
+    background-color: #eee;
+}
+.content
+{
+    height: 100vh;
+    float: left;
+    position: absolute;
+    margin-left: 500px;
+    max-width: 3000px;  
+    min-width: 500px;
+}
+.content_top
+{
+    height: auto;
+    border-bottom: 1px solid #d0c8c8;  
+    padding: 10px;
+}
+.content_title
+{
+    color: black;
+    font-size: 32px;
+}
+.info
+{
+    font-size: 13px;
+    margin: 7px 0;
+}
+.guziki
+{
+    background-color:#8f8e8e;
+    padding: 6px 26px;
+    font-size: 16px;
+    border-radius: 20px;
+    text-align: center;
+    color: white;
+    cursor: pointer;
+    float: right;
+    min-width: 60px;
+    margin: 5px 10px;
+
+}
+.guziki:hover 
+    {
+        background-color: #494949;
+  
+    }
+.data
+{
+    color: #999;
+}
+.content_bot
+{
+    font-size: 16px;
+    margin: 16px;
+}
+
+
+/*Telefony*/
+
+@media screen and (max-width: 639px) {
+body
+{
+    overflow-x: auto;
+}
+.menu
+{
+    width: 100%;
+    display: none;
+    height: auto;
+}
+.compose
+{
+    margin-left: 40%;   
+}
+.lista
+{
+    width: 100%;
+    clear: both;
+}
+.content
+{
+    clear: both;
+    margin-left: 0;
+    position: relative;
+    min-width: 100px;
+}
+
+
+#menu_toggle {
+        display: block;
+        color: #1B98F8;
+        padding: 5px 10px;
+        text-align: right;
+        background-color: #252a3a;
+    }
+    #menu_toggle:hover ~ .menu, .menu:hover {
+        display: block;
+    }
+}
+/* tablet */
+@media screen and (min-width: 640px) and (max-width: 959px){
+body
+{
+    overflow: hidden;
+}
+
+.menu
+{
+    height: 100vh;
+    overflow-y: auto;
+}
+.lista
+{
+    width: 85%;
+    height: 35%;
+    margin-right: 0;
+    overflow-y: auto;
+    margin-left: 150px;
+    position: absolute;
+    border-bottom: 1px solid gray;
+
+}
+.mail
+{
+    height: 50px;
+}
+.mail_new
+{
+    height: 50px;
+}
+.content
+{
+    position: absolute;
+    height: 65%;
+    margin-left: 150px;
+    margin-top: 18.4%;
+    width: auto;
+    overflow-y: auto; 
+}
+
+}
+
